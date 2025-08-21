@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #eef;">
+    <p style="font-size: 18px; color: #333;">Click the button to evaluate/execute JS code/expressions.</p>
+    <button onclick="myfunction()" style="background-color: #007BFF; color: white; padding: 10px 24px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Try It</button>
+    <p id="result" style="font-size: 20px; color: #333; margin-top: 20px; font-weight: bold;"></p>
+    <script>
+        function myfunction() {
+            var x = 17;
+            var y = 30;
+            var a = eval(x + y) + "<br>";
+            var b = eval(2 * 2) + "<br>";
+            var c = eval(y - x) + "<br>";
+            var res = a + b + c;
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+</html>

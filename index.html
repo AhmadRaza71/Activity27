@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f0f8ff;">
+        <h2 style="color: #333;">JS Array Sort</h2>
+        <p style="color: #555;">Click the button to sort the array in ascending or descending order:</p>
+        <button onclick="ascending()" style="background-color: #4CAF50; color: white; padding: 10px 20px; margin: 5px; border: none; cursor: pointer; border-radius: 5px;">Ascending order</button>
+        <button onclick="descending()" style="background-color: #f44336; color: white; padding: 10px 20px; margin: 5px; border: none; cursor: pointer; border-radius: 5px;">Descending order</button>
+        <p id="result" style="font-size: 18px; color: #333; margin-top: 20px;"></p>
+        <script>
+            var points = [40, 100, 1, 5, 25, 10];
+            document.getElementById("result").innerHTML = points;
+            function ascending() {
+                points.sort(function(a, b){return a - b});
+                document.getElementById("result").innerHTML = points;
+            }
+            function descending() {
+                points.sort(function(a, b){return b - a});
+                document.getElementById("result").innerHTML = points;
+            }
+        </script>
+    </body>
+</html>
